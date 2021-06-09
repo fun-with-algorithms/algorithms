@@ -11,6 +11,14 @@ type Node struct {
 	Next *Node
 }
 
+func (n *Node) GetNext() *Node {
+	if n == nil {
+		return nil
+	}
+
+	return n.Next
+}
+
 func (n *Node) String() string {
 	if n == nil {
 		return ""
